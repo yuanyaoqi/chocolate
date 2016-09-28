@@ -1,0 +1,126 @@
+body{
+    background-image: url(../images/20140919192710_CNtdh.jpeg);
+}
+#loginBox{
+    display: none;
+    position: fixed;
+}
+#loginBox>img{
+    position: fixed;
+    top: 78px;
+    left: 905px;
+    z-index: 15;
+}
+/*遮罩层*/
+#loginshadow{
+    width: 1349px;
+    height: 800px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(100,100,100,0.7);
+    z-index: 5;
+}
+/*登录*/
+#login{
+    width: 500px;
+    height: 450px;
+    background-color:gainsboro;
+    position: fixed;
+    text-align: center;
+    top: 100px;
+    left: 425px;
+    z-index: 10;
+}
+#login>div>img{
+    display: inline-block;
+    margin-top: 20px;
+}
+#login h4{
+    color: #512b1e;
+}
+#login div{
+    width: 500px;
+    height: 150px;
+    background-color: white;
+}
+.username,.userpwd{
+    width: 300px;
+    height: 30px;
+    line-height: 50px;
+    border: none;
+}
+.button{
+    width: 150px;
+    height: 40px;
+    background-color:#512b1e;
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 10px;
+    outline: none;
+    position: relative;
+}
+.button:active{
+    left: 1px;
+    top: 1px;
+}
+.button:hover{
+    background-color:saddlebrown;
+}
+#login h5{
+    text-decoration: underline;
+    color: #512b1e;
+}
+#login h5:hover{
+    color: saddlebrown;
+    cursor: pointer;
+}
+#login h6{
+    color: grey;
+    margin: 5px;
+    height: 15px;
+    text-align: left;
+    position: relative;
+    left: 95px;
+}
+/*注册*/
+#regis{
+    width: 500px;
+    height: 450px;
+    background-color:gainsboro;
+    position: fixed;
+    text-align: center;
+    top: 80px;
+    left: 425px;
+    z-index: 10;
+}
+#regis>div>img{
+    display: inline-block;
+    margin-top: 20px;
+}
+#regis h4{
+    color: #512b1e;
+}
+#regis div{
+    width: 500px;
+    height: 150px;
+    background-color: white;
+}
+#regis h5{
+    text-decoration: underline;
+    color: #512b1e;
+}
+#regis h5:hover{
+    color: saddlebrown;
+    cursor: pointer;
+}
+#regis h6{
+    color: grey;
+    margin: 5px;
+    height: 15px;
+    text-align: left;
+    position: relative;
+    left: 95px;
+}

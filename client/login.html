@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login&register</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<button id="profile" onclick="loginAppear()">登录</button>
+<div id="loginBox">
+    <img src="images/hamburger-active.png" alt="" onclick="loginDisappear()">
+    <div id="loginshadow"></div>
+        <div id="login">
+            <div>
+                <img src="images/footer-logo.png" alt="">
+                <h4>WELCOME TO CHOCOLATIER</h4>
+            </div>
+            <form action="login.do" method="post">
+                <br><br>
+                <input type="text" name="username" placeholder="请输入用户名" class="username">
+                <h6> </h6>
+                <input type="password" name="userpwd" placeholder="请输入密码" class="userpwd">
+                <h6 id="loginResult"> </h6>
+                <input type="button" value="登录" class="button" onclick="userLogin()">
+                <h5 onclick="regisTurn()">没有账号?点击注册</h5>
+            </form>
+        </div>
+        <div id="regis">
+            <div>
+                <img src="images/footer-logo.png" alt="">
+                <h4>WELCOME TO CHOCOLATIER</h4>
+            </div>
+            <form action="regis.do" method="post">
+                <br><br>
+                <input type="text" name="username" placeholder="请输入用户名" class="username" onblur="usernameCheck()">
+                <h6 id="nameResult"> </h6>
+                <input type="password" name="userpwd" placeholder="请输入密码" class="userpwd">
+                <h6 id="regisResult"> </h6>
+                <input type="button" value="注册" class="button" onclick="userRegis()">
+                <h5 onclick="loginTurn()">已有账号?点击登录</h5>
+            </form>
+        </div>
+</div>
+<script src="js/login.js"></script>
+</body>
+</html>

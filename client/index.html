@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+<div id="sideBar">
+    <div id="sideName">
+        欢迎,摇旗
+    </div>
+    <div id="sideNav">
+        <br>
+        <ul>
+            <li>我的订单</li>
+            <li>修改密码</li>
+            <li>配送地址</li>
+            <li>我的收藏</li>
+            <li id="logout" onclick="logout()">退出账号</li>
+        </ul>
+    </div>
+</div>
+<div id="contentBox">
+    <div id="content">
+        <!--订单-->
+        <div id="orderinfoboxShadow"></div>
+        <div id="conOrder">
+            <h2>我的订单</h2>
+            <hr>
+            <span class="orderid">订单编号</span><span class="ordernumber">商品数量</span><span class="orderprice">订单总价</span><span class="orderstate">订单状态</span>
+            <hr>
+            <div id="orderlist"></div>
+            <div id="orderinfobox">
+                <img src="./images/close.png" onclick="orderinfoboxClose()">
+                <span>商品图</span><span>商品名</span><span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;单价</span><span>数量</span>
+                <hr>
+                <div id="orderinfolist"></div>
+            </div>
+        </div>
+        <!--修改密码-->
+        <div id="conPwdchange">
+            <h2>修改密码</h2>
+            <hr><br><br>
+                *请输入原密码:&nbsp;&nbsp;&nbsp; <input type="password" id="oldpwd" onblur="oldpwdCheck()"> <br>
+                *请输入新密码:&nbsp;&nbsp;&nbsp; <input type="password" id="newpwd"> <br>
+                *再次输入新密码: <input type="password" id="assurepwd"><br>
+                <h6 id="pwdresult"></h6>
+                <div onclick="passwordChange()" id="pwdchangeButton">保存</div>
+        </div>
+        <!--配送地址-->
+        <div id="conAddress">
+            <div id="addressAdd" onclick="addappear()">新增配送地址</div>
+            <h2>配送地址</h2>
+            <hr>
+            <span class="addname">收货人</span><span class="addnumber">联系电话</span><span class="addinfo">配送地址</span>
+            <hr>
+            <div id="addresslist">
+            </div>
+            <div id="newAddress">
+                <h6>*姓名: </h6><input type="text" id="newaddname">
+                <h6>*联系电话: </h6><input type="text" id="newaddnumber">
+                <h6>*配送地址: </h6><input type="text" id="newaddinfo">
+                <div id="newAddbutton" onclick="addressAdd()">添加</div>
+                <h6 id="addresult"> </h6>
+            </div>
+        </div>
+        <!--收藏-->
+        <div id="conCollect">
+            <h2>我的收藏</h2>
+            <hr>
+            <div id="collectlist">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/profile.js"></script>
+</body>
+</html>
